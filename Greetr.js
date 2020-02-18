@@ -57,6 +57,17 @@
             this.language = lang
             this.validate()
             return this;
+        },
+        htmlGreetings: function(selector, isFormal) {
+            isFormal = isFormal || false;
+            var msg;
+            if (isFormal) {
+                msg = this.formalGreeting()
+            } else {
+                msg = this.greeting()
+            }
+            $(selector).html(msg)
+            return this
         }
 
 

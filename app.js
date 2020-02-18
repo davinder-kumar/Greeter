@@ -1,1 +1,3 @@
-G$("Davinder", "Gaitonde").greet(true).setLang('es').greet(true)
+jQuery("#login").on("click", function() {
+    G$("Davinder", "Kumar").setLang($("#lang").val()).htmlGreetings("#greetings", true).log()
+})
